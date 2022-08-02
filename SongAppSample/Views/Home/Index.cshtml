@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+    <form class="form-inline ">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="background-color:transparent;color:azure">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+<div class="row" style="margin-top:30px">
+    @for (int i = 0; i < 10; i++)
+    {
+        <div class="col-md-3">
+            @Html.Partial("_songCard")
+
+        </div>
+
+    }
+
+</div>
+        

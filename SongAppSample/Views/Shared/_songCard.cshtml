@@ -1,0 +1,12 @@
+﻿@Styles.Render("~/Styles/_songCard")
+<div class="card" style="width: 18rem; ">
+    
+    <img class="card-img-top" id="songimg" src="~/Images/song2.png" alt="Card image cap">
+    <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <h5>Realse Date</h5>
+        <h5>Genre</h5>
+        <h5>Album Title<h5>
+        <h4 style="text-align:end;margin-right:10px;margin-bottom:15px ">@Html.RouteLink("Artist", new { })</h4>
+    </div>
+</div>
